@@ -5,6 +5,6 @@ def islower(c):
             if c != chr(i):
                 return(False)
             else:
-            	return(True)
+                return(True)
     else:
         return(False)
