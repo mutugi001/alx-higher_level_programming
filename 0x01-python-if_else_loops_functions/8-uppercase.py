@@ -7,3 +7,4 @@ def uppercase(str):
         else:
             i = i
         print("{}".format(i), end='')
+    print("{}".format("\n", end='')
