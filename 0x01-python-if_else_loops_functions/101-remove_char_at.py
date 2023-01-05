@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
     copy = ""
-    if n > len(str):
+    if len(str) == n:
+        copy = str
+    if n < 0:
         copy = str
     if str == '\0':
         copy = '\0'
