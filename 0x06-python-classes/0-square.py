@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+""" empty class square to define square attributes"""
+
+
 class Square:
-"""an empty class to have attributes of a square
-	no parameters received"""
     pass
-s = square()
+
+
+s = Square()
 print(s)
