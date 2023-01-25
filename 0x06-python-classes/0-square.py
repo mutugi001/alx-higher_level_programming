@@ -7,4 +7,3 @@ class Square:
 
 
 s = Square()
-print(s)
