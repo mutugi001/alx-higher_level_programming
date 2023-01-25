@@ -7,4 +7,4 @@ class Square:
 
 
 s = Square()
-Square()
+print(s)
