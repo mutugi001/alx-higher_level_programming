@@ -6,4 +6,5 @@ class Square:
     pass
 
 
+s = Square()
 Square()
