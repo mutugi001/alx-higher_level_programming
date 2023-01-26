@@ -3,8 +3,4 @@
 
 
 class Square:
-    pass
-
-
-s = Square()
-print(s)
+    """a square"""
