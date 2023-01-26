@@ -7,12 +7,12 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
-    
+
     @property
     def size(self):
         """getter of attribute size"""
         return(self._size)
-    
+
     @size.setter
     def size(self, value):
         """setterof attribute size"""
@@ -49,12 +49,12 @@ class Square:
         z = 0
         index = int(self.__position[0])
         if self.__size == 0:
-            print("\n",end='')
+            print("\n", end='')
         if self.__position[1] > 0:
-            print("\n",end='')
+            print("\n", end='')
         for i in range(self.__size):
             for z in range(self.__position[0]):
-                print(" ",end='')
+                print(" ", end='')
             for j in range(self.__size):
-                print("#",end='')
+                print("#", end='')
             print("")
