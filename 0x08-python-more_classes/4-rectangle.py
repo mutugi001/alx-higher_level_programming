@@ -70,4 +70,4 @@ class Rectangle:
 
     def __repr__(self):
         """function to print rectangle whe repr is called"""
-        return("Rectangle(" + str(self.__width) + ', ' + str(self.__height) + ')')
+        return("Rectangle({}, {})".format(self.__width,self.__height))
