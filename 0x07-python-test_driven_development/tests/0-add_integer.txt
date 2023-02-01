@@ -60,7 +60,7 @@ if either arguement is a non-integer and non-float, a TypeError is raised:
 ::
 
 	>>> add_integer(2.3, None)
-	Traceback(most recent call last):
+	Traceback (most recent call last):
 	TypeError: b must be an integer
 
 if both arguements are non-integers and non-floats, a TypeError message is only printed for the first arguement.
@@ -75,12 +75,12 @@ the function will fail if infinity is provided
 
 	>>> add_integer(float('inf'))
 	Traceback (most recent call last):
-	OverflowError: cannot convert float infinty to integer
+	OverflowError: cannot convert float infinity to integer
 
 ::
 	>>> add_integer(2, float('inf'))
 	Traceback (most recent call last):
-	OverflowError: cannot convert float infinty to integer
+	OverflowError: cannot convert float infinity to integer
 
 and again with NaN numbers
 ::
@@ -92,5 +92,5 @@ and again with NaN numbers
 ::
 
 	>>> add_integer(2, float('nan'))
-	Traceback (most recent call last)
-	ValueError: cannot convert float float Nan to integer
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
