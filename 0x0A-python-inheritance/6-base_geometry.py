@@ -3,6 +3,7 @@
 
 
 class BaseGeometry:
+    """class created and attributes go here and methods"""
     def area(self):
         """method area that takes no args and raises an
         exception"""
