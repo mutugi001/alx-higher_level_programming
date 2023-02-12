@@ -7,7 +7,7 @@ class MyList(list):
         """returns a sorted list in ascending order"""
         for i in self:
             if type(i) is int:
-                pass
+                continue
             else:
                 raise TypeError("self should contain ints only")
         print(sorted(self))
