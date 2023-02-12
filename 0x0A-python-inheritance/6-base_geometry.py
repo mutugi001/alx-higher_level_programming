@@ -8,4 +8,3 @@ class BaseGeometry:
         """method area that takes no args and raises an
         exception"""
         raise Exception("area() is not implemented")
-
