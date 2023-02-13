@@ -5,6 +5,10 @@
 class BaseGeometry:
     """class created and attributes go here and methods"""
 
+    def __init__(self):
+        """initialization of class basegeometry"""
+        pass
+
     def area(self):
         """method area that takes no args and raises an
         exception"""
@@ -15,7 +19,9 @@ class BaseGeometry:
         self.name = name
         self.value = value
 
-        if self.value is not int:
+        if type(self.name) is not str:
+            raise TypeError("{} is not a string".format(self.name))
+        if type(self.value) is not int:
             raise TypeError("{} must be an integer".format(self.name))
         if self.value <= 0:
             raise ValueError("{} must be greater than 0".format(self.name))
@@ -33,7 +39,6 @@ class Rectangle(BaseGeometry):
         height - height of rectangle"""
         self.__width = width
         self.__height = height
-
-        BaseGeometry.integer_validator(self, name, value)
-        integer_validator("width", self.__width)
-        integer_validator("height", self.__height)
+        BaseGeometry.__init__(self)
+        BaseGeometry.integer_validator(self, "width", self.__width)
+        BaseGeometry.integer_validator(self, "height", self.__height)
