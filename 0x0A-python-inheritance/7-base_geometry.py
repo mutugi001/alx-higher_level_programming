@@ -12,9 +12,7 @@ class BaseGeometry:
         """method that validates value"""
         self.value = value
         self.name = name
-        if not self.value is int:
-            raise TypeError(self.name, "must be an integer")
+        if type(self.value) is not int:
+            raise TypeError("{} must be an integer".format(self.name))
         if self.value <= 0:
-            raise ValueError(self.name, "must be greater than 0")
-        else:
-            return
+            raise ValueError("{} must be greater than 0".format(self.name))
