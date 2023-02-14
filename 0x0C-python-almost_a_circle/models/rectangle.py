@@ -5,7 +5,7 @@
 class Base:
     """class created"""
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
         """initialization of class base"""
         if id is not None:
@@ -28,7 +28,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        if id != None:
+        if id is not None:
             self.id = id
 
     @property
