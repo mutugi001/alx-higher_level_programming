@@ -126,9 +126,8 @@ class Rectangle(Base):
         """prints the rectangle using the # chararcter"""
         for i in range(self.__height):
             for j in range(self.__width):
-                print("#",end='')
+                print("#", end='')
             if i != self.__height:
-                print("\n",end='')
+                print("\n", end='')
             else:
-                print("",end='')
-
+                print("", end='')
