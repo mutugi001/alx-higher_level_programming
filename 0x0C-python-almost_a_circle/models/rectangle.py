@@ -24,10 +24,35 @@ class Rectangle(Base):
         """initialization of class Rectangle with args
         width, height, x, y and id"""
         Base.__init__(self, id=None)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
+        else:
+            self.__width = width
+
+        if type(height) is not int:
+            raise TypeError("height must be an integer")
+        if height <= 0:
+            raise ValueError("height must be > 0")
+        else:
+            self.__height = height
+
+        if type(x) is not int:
+            raise TypeError("x must be an integer")
+        if x < 0:
+            raise ValueError("x must be >= 0")
+        if x == {}:
+            raise TypeError("x must be an integer")
+        else:
+            self.__x = x
+
+        if type(y) is not int:
+            raise TypeError("y must be an integer")
+        if y < 0:
+            raise ValueError("y must be >= 0")
+        else:
+            self.__y = y
         if id is not None:
             self.id = id
 
@@ -72,6 +97,8 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
+        if not x:
+            raise TypeError("x must be an integer")
         else:
             self.__x = value
 
