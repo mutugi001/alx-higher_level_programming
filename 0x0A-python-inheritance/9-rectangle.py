@@ -15,9 +15,7 @@ class BaseGeometry:
         # raise Exception("area() is not implemented")
         self.height = height
         self.width = width
-
         area = self.width * self.height
-        # print("Area {}".format(area))
         print("[Rectangle] {} {}".format(self.width, self.height))
         return area
 
@@ -50,12 +48,8 @@ class Rectangle(BaseGeometry):
         BaseGeometry.integer_validator(self, "width", self.__width)
         BaseGeometry.integer_validator(self, "height", self.__height)
 
-        # wBaseGeometry.area(self, self.__height,self. __width)
-
     def area(self):
-        # self.height = height
-        # self.width = width
-
+        """method to get the area of rectangle"""
         area = self.__width * self.__height
         print("[Rectangle] {}/{}".format(self.__width, self.__height))
         return str(area)
