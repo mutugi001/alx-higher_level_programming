@@ -12,7 +12,6 @@ class BaseGeometry:
     def area(self, height, width):
         """method area that takes no args and raises an
         exception"""
-        # raise Exception("area() is not implemented")
         self.height = height
         self.width = width
         area = self.width * self.height
@@ -53,4 +52,3 @@ class Rectangle(BaseGeometry):
         area = self.__width * self.__height
         print("[Rectangle] {}/{}".format(self.__width, self.__height))
         return str(area)
-        
